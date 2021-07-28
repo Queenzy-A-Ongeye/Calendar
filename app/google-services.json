@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "205592187357",
+    "project_id": "calendar-1d8b5",
+    "storage_bucket": "calendar-1d8b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205592187357:android:5c202267c120e7d6b1a634",
+        "android_client_info": {
+          "package_name": "com.queen.calendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205592187357-qdf4kfbp1np7qmt35q64d0r8vhh4oa7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW87CX2j5Po0aoT35-4J2NWsWXygftWL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205592187357-qdf4kfbp1np7qmt35q64d0r8vhh4oa7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
