@@ -9,9 +9,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.EventLog;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.events.Event;
@@ -26,12 +29,14 @@ public class DashboardActivity extends AppCompatActivity {
 
     Calendar calendar = Calendar.getInstance();
     CalendarView calendarView;
+    Button mButn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_ativity);
 
         calendarView = (CalendarView) findViewById(R.id.calendar);
+        mButn = (Button) findViewById(R.id.ctick);
         calendarView.setClickable(true);
 
         calendarView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -51,6 +56,13 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+        mButn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, CalActivity.class);
+                startActivity(intent);
+            }
+        });
 //        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
 //            @Override
 //            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
@@ -85,4 +97,5 @@ public class DashboardActivity extends AppCompatActivity {
 //    public void setCalendarView(CalendarView calendarView) {
 //        this.calendarView = calendarView;
 //    }
+
 }
