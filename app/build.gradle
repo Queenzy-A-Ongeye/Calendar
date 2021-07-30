@@ -53,6 +53,10 @@ dependencies {
 // Chart and graph library
     implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
     implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //materialdatepicker
+    implementation'com.google.android.material:material:1.2.0-alpha03'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

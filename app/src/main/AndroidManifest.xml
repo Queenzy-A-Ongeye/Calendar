@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calendar">
+        <activity android:name=".ui.TimeActivity"> <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.queen.calendar.ui.ListActivity" />
+        </activity>
         <activity android:name=".ui.CalActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -19,9 +23,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.queen.calendar.ui.MainActivity" />
         </activity>
-        <activity android:name=".ui.DashboardActivity"> <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.queen.calendar.ui.ListActivity" />
+        <activity android:name=".ui.DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.queen.calendar.ui.ListActivity" />
         </activity>
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.LoginActivity" />
@@ -32,6 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".adapter.AlamReceiver"/>
     </application>
 
 </manifest>
